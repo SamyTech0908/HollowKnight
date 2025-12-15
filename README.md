@@ -12,7 +12,7 @@ Estrutura do repositório
 - style.css — estilos
 - script.js — scripts JavaScript
 - IMAGENS/ — imagens usadas pelo projeto
-- Sons/ — arquivos de áudio
+- Audio/ — arquivos de áudio
 
 Pré-requisitos
 --------------
