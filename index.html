@@ -1,0 +1,53 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Product Card - Hollow Knight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box" onmouseenter="startSound('sherma')" onmouseleave="stopSound('sherma')">
+      <h2 class="name">SHERMA</h2>
+      <a href="#" class="buy">ESCOLHER</a>
+      <div class="circle"></div>
+      <img src="IMAGENS/sherma-silksong-1707868626618_865h.600.png" class="product knight">
+      <audio id="sherma-sound" src="Sons/Sherma.mp3"></audio>
+    </div>
+    <div class="box" onmouseenter="startSound('hornet')" onmouseleave="stopSound('hornet')">
+      <h2 class="name">HORNET</h2>
+      <a href="#" class="buy">ESCOLHER</a>
+      <div class="circle"></div>
+      <img src="https://www.pngkit.com/png/full/96-962879_hornet-hollow-knight-hollow-knight-hornet-mask.png" class="product">
+      <audio id="hornet-sound" src="Sons/Silksong.mp3"></audio>
+    </div>
+    <div class="box" onmouseenter="startSound('shakra')" onmouseleave="stopSound('shakra')">
+      <h2 class="name">SHAKRA</h2>
+      <a href="#" class="buy">ESCOLHER</a>
+      <div class="circle"></div>
+      <img src="IMAGENS/pngfind.com-hollow-knight-png-5972685.png" class="product">
+      <audio id="shakra-sound" src="Sons/Shakra.mp3"></audio>
+    </div>
+  </div>
+  <script src="vanilla-tilt.min.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+      max: 25,
+      speed: 400
+    });
+
+    function startSound(character) {
+      const audio = document.getElementById(`${character}-sound`);
+      if (audio.paused) {  // Só inicia se estiver pausado
+        audio.currentTime = 0;
+        audio.play();
+      }
+    }
+
+    function stopSound(character) {
+      const audio = document.getElementById(`${character}-sound`);
+      audio.pause();
+      audio.currentTime = 0;
+    }
+  </script>
+</body>

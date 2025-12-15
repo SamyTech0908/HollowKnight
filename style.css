@@ -1,0 +1,179 @@
+@import url("https://sidequest.pt/wp-content/uploads/2025/09/banner-3.jpg");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tinos", serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://picfiles.alphacoders.com/537/537041.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  transform-style: preserve-3d;
+}
+
+.container .box {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  margin: 40px;
+  background: #0a0404f1;
+  border-radius: 30px; 
+  transform-style: preserve-3d;
+  border: 1px solid white; 
+}
+
+.container .box::before {
+  content: "HOLLOW";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: rgba(46, 11, 11, 0);
+  font-style: italic;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.container .box::after {
+  content: "KNIGHT";
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.5em;
+  font-weight: 900;
+  color: rgba(66, 29, 29, 0);
+  font-style: italic;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.container .box:hover::before,
+.container .box:hover::after {
+  opacity: 0.04;
+}
+
+.container .box .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 75px);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+  font-size: 1.7em; 
+  font-weight: bold; 
+}
+
+.container .box:hover .name {
+  top: 40px;
+  opacity: 1;
+}
+
+.container .box .buy {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, 0, 75px);
+  color: rgb(255, 255, 255);
+  background: #080808;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.container .box:hover .buy {
+  bottom: 50px; 
+  opacity: 1;
+}
+
+.container .box .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background: #fdd;
+  transform-style: preserve-3d;
+  z-index: 10;
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 0px);
+}
+
+.container .box .product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 300px;
+  transition: 0.5s;
+  z-index: 11;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0px) rotate(-15deg);
+}
+
+.container .box .knight {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 200px;
+  transition: 0.5s;
+  z-index: 11;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0px) rotate(-15deg);
+}
+
+.container .box:hover .product {
+  transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
+}
+
+.container .box:nth-child(1) .circle,
+.container .box:nth-child(1) .buy {
+  background: #136d68;
+}
+
+.container .box:nth-child(2) .circle,
+.container .box:nth-child(2) .buy {
+  background: #9d0a54;
+}
+
+.container .box:nth-child(3) .circle,
+.container .box:nth-child(3) .buy {
+  background: #cc651a;
+}
+
+.product.knight {
+    width: 200px; 
+}
+
+.box:nth-child(3) .product {
+    width: 180px; 
+}
