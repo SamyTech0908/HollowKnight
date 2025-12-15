@@ -65,11 +65,10 @@ Contribuição
 
 - Abra uma issue ou envie um pull request com melhorias.
 
-Permissão de uso
+Licença
 -------
-Você pode usar, copiar e modificar o código deste repositório livremente para usos pessoais ou comerciais.
 
-Atribuição ao autor (`SamyTech`) é apreciada, mas não obrigatória. Eu não publico dados pessoais sensíveis neste repositório; para contato público veja meu perfil no GitHub: https://github.com/SamyTech0908
+Adicione a licença desejada (por exemplo MIT).
 
 Contato
 -------
