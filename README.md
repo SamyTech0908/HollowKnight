@@ -47,31 +47,3 @@ npx http-server -p 5500
 # ou (com instalação global): http-server -p 5500
 # abra http://localhost:5500 no navegador
 ```
-
-Observações
------------
-
-- Se o navegador mostrar conteúdo antigo, limpe o cache ou use modo anônimo.
-- Altere a porta (5500) se necessário.
-
-Deploy (GitHub Pages)
----------------------
-
-- Faça commit e push para o GitHub.
-- Em Settings > Pages, habilite GitHub Pages a partir da branch `main` (root).
-
-Contribuição
-------------
-
-- Abra uma issue ou envie um pull request com melhorias.
-
-Licença
--------
-
-Adicione a licença desejada (por exemplo MIT).
-
-Contato
--------
-
-- Autor: SamyTech
-
